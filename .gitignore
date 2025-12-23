@@ -1,0 +1,6 @@
+.vs
+.vscode
+dist/bin/
+**/bin/
+**/obj/
+*.sln

@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f4f4f9, #e0e0f0);
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+}
+
+.upload-container {
+    background-color: #fff;
+    padding: 25px 35px;
+    margin: 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 75%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="file"] {
+    padding: 15px;
+    white-space: normal;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button {
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+}
+
+#progressDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#progressDiv div {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #eef2f7;
+    border-left: 4px solid #4CAF50;
+    border-radius: 8px;
+}
+
+#progressDiv div.error {
+    background-color: #fdecea;
+    border-left: 4px solid #b00020;
+    color: #b00020;
+}
